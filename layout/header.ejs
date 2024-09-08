@@ -1,0 +1,45 @@
+<header class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-md-flex align-items-center">
+            <h1 class="mb-0 fs-1"><a href="index.html">Vivre</a></h1>
+            <form class="d-none d-md-flex position-relative">
+                <input class="form-control search-input w-100" type="search" placeholder="搜尋文章" aria-label="Search">
+                <span>
+                    <button class="btn search-btn link-success position-absolute top-50 end-0 translate-middle-y p-0 fz-4 me-5" type="submit"><i class="bi bi-search"></i></button>
+                </span>
+            </form>
+        </div>
+        <nav class="nav">
+            <a href="#" class="showmenu d-md-none d-block p-5 text-black">
+                <i class="bi bi-list fz-4"></i>
+            </a>
+            <section class="menu-mobile container-md d-md-none">
+                <div class="container">
+                    <a href="#" class="closemenu d-block mt-2 me-3 p-3 ms-auto text-black">
+                        <i class="bi bi-x fs-5"></i>
+                    </a>
+                    <form class="my-6 d-flex position-relative">
+                        <input class="form-control search-input w-100" type="search" placeholder="搜尋文章" aria-label="Search">
+                        <span>
+                            <button class="btn search-btn link-success position-absolute top-50 end-0 translate-middle-y p-0 fz-4 me-5" type="submit"><i class="bi bi-search"></i></button>
+                        </span>
+                    </form>
+                    <ul class="ps-0 mb-10">
+                        <li><a href="article.html" class="d-block p-3 fw-bold">所有文章</a></li>
+                        <li><a href="subscribe.html" class="d-block p-3 fw-bold">訂閱方案</a></li>
+                        <li><a href="about.html" class="d-block p-3 fw-bold">關於我們</a></li>
+                    </ul>
+                    <button type="button" class="log-in-btn mb-20 btn btn-accent-200 text-white btn-sm fw-bold" onclick="location.href='log_in.html'">登入 / 註冊</button>
+                </div>
+            </section>
+            <section class="menu d-none d-md-flex">
+                <ul class="ps-0 mb-0 d-flex align-items-center">
+                    <li><a href="article.html" class="d-block px-5 py-2 fw-bold">所有文章</a></li>
+                    <li><a href="subscribe.html" class="d-block px-5 py-2 ms-6 fw-bold">訂閱方案</a></li>
+                    <li><a href="about.html" class="d-block px-5 py-2 ms-6 fw-bold">關於我們</a></li>
+                </ul>
+                <button type="button" class="log-in ms-6 btn btn-accent-200 fs-6 text-white btn-lg fw-bold" onclick="location.href='log_in.html'">登入 / 註冊</button>
+            </section>
+        </nav>
+    </div>
+</header>

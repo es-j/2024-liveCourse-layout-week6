@@ -1,0 +1,70 @@
+.header{
+  h1 a{
+    color: $gray-800;
+    background-image: url(../images/logo.svg);
+    background-size: cover;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 68px;
+    height: 20px;
+    @include md{
+      width: 96px;
+      height: 28px;
+      margin-right: 36px;
+    }
+  }
+  .search-input{
+    line-height: 1.5;
+    border-radius: 100px;
+    padding: 8px 20px;
+    @include md{
+      padding: 12px 20px;
+    }
+  }
+  .search-btn{
+    height: 24px;
+  }
+  .nav{
+    ul{
+      list-style: none;
+      a{
+        color: $gray-800;
+        line-height: 1.2;
+      }
+      a:hover{
+        color: $white;
+        background-color: $accent-200;
+      }
+    }
+  }
+  .menu-mobile{
+    max-height: 0px;
+    overflow: hidden;
+    position: absolute;
+    transition: max-height 1s;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    background-color: $primary-100;
+    .log-in-btn{
+      width: 100%;
+    }
+  }
+  .closemenu{
+    width: 44px;
+    height: 44px;
+  }
+  .menu{
+    button{
+      margin: 36px 0;
+    }
+  }
+}
+.menu-show .menu-mobile{
+  height: 100vh;
+  max-height: 100vh;
+  top: 0;
+  bottom: 0;
+}

@@ -1,0 +1,240 @@
+.index{
+  .banner{
+    height: 551px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/banner-sm.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    h3{
+      margin-top: 337px;
+    }
+    @include md{
+      height: 621px;
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/banner.png");
+      h3{
+        margin-top: 0;
+      }
+    }
+  }
+  .popular{
+    h4{
+      color: $gray-800;
+    }
+    ul{
+      max-width: 351px;
+      @include md{
+        max-width: none;
+      }
+    }
+    h6{
+      border-radius: 20px 0;
+      color: $white;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 32px 0;
+      @include md{
+        font-size: 20px;
+        font-weight: 900;
+        padding: 88px 0;
+      }
+    }
+    h6:hover{
+      color: $black;
+      opacity: 0.8;
+    }
+    li:nth-child(1) h6{
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-1-sm.png");
+      @include md{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-1.png");
+      }
+    }
+    li:nth-child(2) h6{
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-2-sm.png");
+      @include md{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-2.png");
+      }
+    }
+    li:nth-child(3) h6{
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-3-sm.png");
+      @include md{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-3.png");
+      }
+    }
+    li:nth-child(4) h6{
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-4-sm.png");
+      @include md{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-4.png");
+      }
+    }
+    li:nth-child(5) h6{
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-5-sm.png");
+      @include md{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-5.png");
+      }
+    }
+    li:nth-child(6) h6{
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-6-sm.png");
+      @include md{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-6.png");
+      }
+    }
+    li:nth-child(7) h6{
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-7-sm.png");
+      @include md{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-7.png");
+      }
+    }
+    li:nth-child(8) h6{
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-8-sm.png");
+      @include md{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/theme-8.png");
+      }
+    }
+  }
+  .select{
+    .carousel-inner{
+      border-bottom: 1px solid $gray-800;
+      img{
+        height: 192px;
+      }
+      p{
+        letter-spacing: 0.05em;
+      }
+    }
+    .carousel-btn{
+      padding: 4px 16px;
+      border-radius: 100px;
+    }
+    .divider{
+      width: 80px;
+      height: 1px;
+      background-color: $secondary;
+    }
+    .page-num{
+      color: $gray-800;
+    }
+  }
+  .more{
+    color: $accent-200;
+  }
+  .more:hover{
+    color: $accent-300;
+  }
+  .discount{
+    .discount-bg-img{
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/bg-2-sm.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      @include md{
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/bg-1.png"), url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/bg-2.png");
+        background-position: left bottom, right bottom;
+      }
+    }
+    strong{
+      color: $accent-200;
+      font-weight: 700;
+    }
+    h4{
+      font-size: 24px;
+      color: $gray-800;
+      @include md{
+        font-size: 32px;
+      }
+    }
+    ul{
+      letter-spacing: 0.05em;
+    }
+  }
+  .focus{
+    h4{
+      color: $gray-800;
+    }
+    .carousel-item{
+      img{
+        border-radius: 4px;
+      }
+    }
+    .xs-tags{
+      button{
+        padding: 4px 8px;
+        margin-right: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+  .focus-md-list{
+    li{
+      line-height: 1.2;
+    }
+    li:hover{
+      border-radius: 4px;
+      background: $accent-100;
+    }
+  }
+  .focus-md-photo{
+    :nth-child(1){
+      border-radius: 20px 0px 4px 20px;
+    }
+    :nth-child(2),img:nth-child(3){
+      border-radius: 4px;
+    }
+    :nth-child(4){
+      border-radius: 0px 20px 20px 0px;
+    }
+  }
+  .lifestyle{
+    img{
+      border-radius: 4px;
+    }
+  }
+  .newsletter-subscribe{
+    h6{
+      @include md{
+        font-size: 20px;
+      }
+    }
+    h5{
+      @include md{
+        font-size: 32px;
+      }
+    }
+    .md-newsletter-item{
+      color: $white;
+    }
+    .md-newsletter-item:hover{
+      img{
+        opacity: 0.5;
+      }
+      color: $black;
+    }
+    .carousel-item, .md-newsletter-item{
+      strong{
+        border:1px solid $accent-100;
+        border-radius: 4px;
+        font-weight: 700;
+        top: -16px;
+      }
+    }
+    .slide{
+      margin-bottom: 44px;
+    }
+    .mt-64{
+      margin-top: 64px;
+    }
+  }
+  .write-for-us{
+    color: $gray-800;;
+    h5{
+      font-size: 24px;
+      @include md{
+        font-size: 32px;
+      }
+    }
+    h6{
+      font-size: 20px;
+      @include md{
+        font-size: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.successful-payment{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include md{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .order-detail{
+        border-radius: 12px;
+    }
+    h3{
+        font-size: 20px;
+        @include md{
+            font-size: 24px;
+        }
+    }
+    .plan-name{
+        font-size: 16px;
+        @include md{
+            font-size: 20px;
+        }
+    }
+    .color-a1{
+        color: #A1A1AA;
+    }
+    .btn{
+        border-radius: 100px;
+    }
+}

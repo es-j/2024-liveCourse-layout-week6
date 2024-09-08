@@ -1,0 +1,27 @@
+.about-banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/about-banner-sm.png);
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include md{
+        background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/about-banner.png);
+        height: 454px;
+    }
+}
+
+.timeline-year{
+    font-size: 16px;
+    color: $gray-100;
+    @include md{
+        font-size: 24px;
+    }
+}
+
+.timeline-detail{
+    border-color: $gray-500;
+    width: calc(100% - 50px);
+    @include md{
+        width: calc(100% - 67px);
+    }
+}

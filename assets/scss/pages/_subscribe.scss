@@ -1,0 +1,49 @@
+.subscribe{
+    @include md{
+        border-top: 1px solid $gray-500;
+    }
+    .plan-month{
+        color: $secondary;
+    }
+    .plan-month:hover{
+        color: $white;
+        background-color: $accent-200;
+    }
+    .plan-list{
+        margin-bottom: 60px;
+        @include md{
+            margin-bottom: 100px;
+        }
+    }
+    .detail{
+        color: #6C757D;
+        border-radius: 12px;
+        button{
+            border-radius: 100px;
+        }
+    }
+    .detail-title{
+        margin-bottom: 36px;
+        @include md{
+            margin-bottom: 100px;
+        }
+        h3{
+            font-size: 16px;
+            font-weight: 700;
+            @include md{
+                font-size: 20px;
+                font-weight: 900;
+            }
+        }
+        p{
+            color: $gray-500;
+        }
+    }
+    .price-amount{
+        font-size: 32px;
+    }
+    .price-unit{
+        color: #A1A1AA;
+        font-size: 20px;
+    }
+}

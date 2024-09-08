@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vivre | 訂閱方案</title>
+    </head>
+    <body class="bg-primary-100">
+        <%- include('./layout/header'); -%>
+        <main class="subscribe container fw-bold">
+            <div class="mt-4 py-3 mb-2">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb fw-semibold mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="subscribe.html">訂閱方案</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <h2 class="fz-3 fw-bolder mb-10 mb-md-15 text-gray-800">訂閱方案</h2>
+            <div class="row justify-content-center">
+                <div class="btn-group mb-6 mb-md-10 col-md-4 gap-md-6" role="group" aria-label="subscribe plan">
+                    <button type="button" class="btn btn-accent-200 text-white fw-semibold rounded-0 py-3">年繳</button>
+                    <button type="button" class="btn plan-month fw-semibold rounded-0 py-3">月繳</button>
+                </div>
+            </div>
+            <div class="row plan-list gy-6">
+                <div class="plan-item col-md-4">
+                    <div class="detail h-100 bg-white border border-primary-300 p-6 d-flex flex-column">
+                        <div class="detail-title text-center">
+                            <h3 class="mb-4">輕量型</h3>
+                            <strong d-block>
+                                <div class="price-amount d-inline-block">NT 99</div>
+                                <div class="price-unit d-inline-block">/ 月</div>
+                            </strong>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-column gap-7 mb-15 flex-grow-1">
+                            <li><i class="bi bi-check-square-fill me-2"></i>每月最新文章無限閱讀</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>專屬會員限定內容</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>定期電子報</li>
+                        </ul>
+                        <button type="button" class="btn bg-gray-100 w-100 py-3 fw-bold" onclick="location.href='payment_info.html'">我要訂閱<i class="bi bi-arrow-right ms-3"></i></button>
+                    </div>
+                </div>
+                <div class="plan-item col-md-4">
+                    <div class="detail h-100 bg-white border border-primary-300 p-6 d-flex flex-column">
+                        <div class="detail-title text-center">
+                            <h3 class="mb-4">玩咖型</h3>
+                            <strong d-block>
+                                <div class="price-amount d-inline-block">NT 159</div>
+                                <div class="price-unit d-inline-block">/ 月</div>
+                            </strong>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-column gap-7 mb-15 flex-grow-1">
+                            <li><i class="bi bi-check-square-fill me-2"></i>每月最新文章無限閱讀</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>專屬會員限定內容</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>定期電子報</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>年度精選禮物</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>24/7 優先客戶服務</li>
+                        </ul>
+                        <button type="button" class="btn bg-gray-100 w-100 py-3 fw-bold" onclick="location.href='payment_info.html'">我要訂閱<i class="bi bi-arrow-right ms-3"></i></button>
+                    </div>
+                </div>
+                <div class="plan-item col-md-4">
+                    <div class="detail bg-white border border-2 border-accent-200 p-6">
+                        <div class="detail-title text-center mb-15">
+                            <h3 class="mb-4">家庭型</h3>
+                            <strong>
+                                <div class="price-amount d-inline-block text-accent-200">NT 599</div>
+                                <div class="price-unit d-inline-block">/ 月</div>
+                            </strong>
+                            <p class="mt-4 mb-0 fs-5">NT 899</p>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-column gap-7 mb-15 text-gray-800">
+                            <li><i class="bi bi-check-square-fill me-2"></i>每月最新文章無限閱讀</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>專屬會員限定內容</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>定期電子報</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>年度精選禮物</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>24/7 優先客戶服務</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>為每個成員量身打造專屬行程</li>
+                            <li><i class="bi bi-check-square-fill me-2"></i>最多 5 個家庭成員共享</li>
+                        </ul>
+                        <button type="button" class="btn btn-accent-200 text-white w-100 py-3 fw-bold" onclick="location.href='payment_info.html'">我要訂閱<i class="bi bi-arrow-right ms-3"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+    </body>
+</html>

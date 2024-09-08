@@ -1,0 +1,53 @@
+.payment-info{
+    padding-bottom: 60px;
+    @include md{
+        border-top: 1px solid $gray-500;
+        padding-bottom: 100px;
+    }
+    section{
+        border-radius: 12px;
+    }
+    h3{
+        font-size: 20px;
+        @include md{
+            font-size: 24px;
+        }
+    }
+    input{
+        line-height: 1.5;
+    };
+    input::placeholder{
+        color: $gray-500;
+    }
+    .form-check-label{
+        letter-spacing: 0.05em;
+        line-height: 1.5;
+    }
+    .payment-method-option{
+        margin-left: -32px;
+    }
+    .plan-name, .plan-price{
+        font-size: 16px;
+        @include md{
+            font-size: 20px;
+        }
+    }
+    .order-info-color-dark{
+        color: #09090B;
+    }
+    .order-info-color-medium{
+        color: #52525B;
+    }
+    .order-info-color-light{
+        color: #A1A1AA;
+    }
+    .btn{
+        border-radius: 100px;
+    }
+    .total-price{
+        font-size: 24px;
+        @include md{
+            font-size: 28px;
+        }
+    }
+}

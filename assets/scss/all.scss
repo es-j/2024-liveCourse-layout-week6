@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+@import "../../node_modules/bootstrap";
+
+@import './utils/utility';
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+@import './pages/index.scss';
+@import './pages/subscribe.scss';
+@import './pages/payment_info.scss';
+@import './pages/successful_payment.scss';
+@import './pages/about.scss';
+@import './pages/article.scss';
